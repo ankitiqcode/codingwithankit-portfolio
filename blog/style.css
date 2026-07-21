@@ -556,3 +556,219 @@ p{ margin: 0; }
   .hero__cta{ flex-direction: column; align-items: stretch; }
   .hero__cta .btn{ justify-content: center; }
 }
+
+/* ==========================================================================
+   ARTICLE PAGE ADD-ONS
+   Appended for individual blog article pages (e.g. python-interview-questions.html)
+   Existing rules above this line are untouched. Reuses the same design tokens
+   (--bg, --card, --accent, --radius-*, --t-*, etc.) defined in :root above —
+   no new tokens, no overrides of existing selectors.
+   ========================================================================== */
+
+/* ---------- Reading progress bar ---------- */
+.reading-progress{
+  position: fixed; top: 0; left: 0; width: 100%; height: 3px;
+  background: transparent; z-index: 200;
+}
+.reading-progress__bar{
+  height: 100%; width: 0%;
+  background: var(--grad-primary);
+  transition: width 0.1s linear;
+}
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb{ padding-top: 18px; }
+.breadcrumb__list{ display: flex; flex-wrap: wrap; gap: .5rem; font-size: .85rem; color: var(--text-faint); }
+.breadcrumb__list a{ color: var(--text-muted); transition: color var(--t-fast) var(--ease); }
+.breadcrumb__list a:hover{ color: var(--accent); }
+.breadcrumb__list li[aria-current="page"]{ color: var(--text); }
+
+/* ---------- Article hero variant ---------- */
+.hero--article{ padding-top: calc(56px + var(--nav-h)); padding-bottom: 40px; }
+.hero__inner--article{ grid-template-columns: 1fr; text-align: left; }
+.badge--static{ position: static; display: inline-flex; margin-bottom: 1rem; }
+.article-meta{ margin-top: 1.4rem; }
+
+.article-hero-image{ margin-top: 8px; margin-bottom: 8px; }
+.article-cover{
+  width: 100%; max-height: 460px; object-fit: cover;
+  border-radius: var(--radius-lg); border: 1px solid var(--border);
+}
+
+/* ---------- Article layout: TOC + content ---------- */
+.article-layout{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 3rem;
+  padding-block: 56px;
+  align-items: start;
+}
+
+.toc{
+  position: sticky; top: calc(var(--nav-h) + 20px);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.3rem;
+  max-height: calc(100vh - var(--nav-h) - 40px);
+  overflow-y: auto;
+}
+.toc__title{ font-family: var(--font-mono); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--text-faint); margin-bottom: .8rem; }
+.toc__list{ display: flex; flex-direction: column; gap: .55rem; counter-reset: toc; }
+.toc__list li{ font-size: .88rem; }
+.toc__list a{ color: var(--text-muted); transition: color var(--t-fast) var(--ease); }
+.toc__list a:hover{ color: var(--accent); }
+.toc__list a.is-active{ color: var(--accent); font-weight: 600; }
+
+/* ---------- Article typography ---------- */
+.article-content h2{
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  margin-top: 2.6rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid var(--border);
+}
+.article-content h2:first-of-type{ margin-top: 0; }
+.article-content h3{ font-size: 1.05rem; margin: 0; }
+.article-lede{ font-size: 1.05rem; color: var(--text-muted); margin-bottom: 1.6rem; }
+.article-content p{ color: var(--text); margin-bottom: .9rem; }
+.article-content code{
+  font-family: var(--font-mono); font-size: .86em;
+  background: rgba(56,189,248,0.08); color: var(--accent);
+  padding: .1rem .4rem; border-radius: 5px;
+}
+
+/* ---------- Callouts ---------- */
+.callout{
+  border-radius: var(--radius-md);
+  padding: 1rem 1.2rem;
+  margin: 1.2rem 0;
+  font-size: .92rem;
+  border: 1px solid var(--border);
+  background: rgba(248,250,252,0.03);
+}
+.callout--tip{ border-color: rgba(56,189,248,0.35); background: rgba(56,189,248,0.06); }
+.callout--note{ border-color: var(--border-strong); }
+.callout--warning{ border-color: rgba(245,158,11,0.4); background: rgba(245,158,11,0.08); }
+
+/* ---------- Tables ---------- */
+.article-table{
+  width: 100%; border-collapse: collapse; margin: 1.2rem 0;
+  font-size: .9rem; border-radius: var(--radius-md); overflow: hidden;
+}
+.article-table th, .article-table td{
+  padding: .7rem 1rem; text-align: left; border-bottom: 1px solid var(--border);
+}
+.article-table th{ background: rgba(248,250,252,0.04); color: var(--text); font-family: var(--font-display); }
+.article-table td{ color: var(--text-muted); }
+
+/* ---------- Question cards ---------- */
+.qa-section{ margin-bottom: 1rem; }
+.question-card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.6rem;
+  margin-bottom: 1.4rem;
+}
+.question-card__head{
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  margin-bottom: .8rem;
+}
+.difficulty-badge{
+  font-family: var(--font-mono); font-size: .72rem; font-weight: 600;
+  padding: .3rem .7rem; border-radius: var(--radius-pill); white-space: nowrap;
+}
+.difficulty-badge--easy{ background: rgba(74,222,128,0.12); color: #4ADE80; border: 1px solid rgba(74,222,128,0.3); }
+.difficulty-badge--medium{ background: rgba(245,158,11,0.12); color: #F59E0B; border: 1px solid rgba(245,158,11,0.3); }
+.difficulty-badge--hard{ background: rgba(248,113,113,0.12); color: #F87171; border: 1px solid rgba(248,113,113,0.3); }
+
+.output-label{ font-family: var(--font-mono); font-size: .74rem; text-transform: uppercase; letter-spacing: .06em; color: var(--text-faint); margin: .8rem 0 .3rem; }
+.output-block{
+  background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: .8rem 1rem; font-family: var(--font-mono); font-size: .85rem; color: #C7D8F5;
+  white-space: pre-wrap; overflow-x: auto;
+}
+.explanation{ margin-top: .8rem; font-size: .92rem; color: var(--text-muted); }
+
+/* ---------- Code blocks ---------- */
+.code-block{
+  border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border);
+  margin: 1rem 0; background: var(--bg-soft);
+}
+.code-block__header{
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .6rem 1rem; border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);
+}
+.code-block__lang{ font-family: var(--font-mono); font-size: .74rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .06em; }
+.code-block__copy{ padding: .3rem .8rem; font-size: .74rem; }
+.code-block__copy.is-copied{ background: rgba(74,222,128,0.15); border-color: rgba(74,222,128,0.4); color: #4ADE80; }
+.code-block__pre{ margin: 0; padding: 1rem 1.2rem; overflow-x: auto; counter-reset: line; position: relative; }
+.code-block__code{
+  font-family: var(--font-mono); font-size: .86rem; line-height: 1.9; color: #C7D8F5;
+  display: block; white-space: pre; padding-left: 2.4rem;
+}
+.code-block__pre code{ background: none; color: inherit; padding: 0; }
+
+/* ---------- Tips list ---------- */
+.tips-list{ display: flex; flex-direction: column; gap: .7rem; padding-left: 1.2rem; list-style: disc; color: var(--text-muted); }
+
+/* ---------- Quick navigation ---------- */
+.quick-nav{
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding-block: 1.6rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.quick-nav__link{ display: flex; flex-direction: column; gap: .2rem; max-width: 260px; }
+.quick-nav__link--next{ text-align: right; margin-left: auto; }
+.quick-nav__label{ font-family: var(--font-mono); font-size: .72rem; color: var(--text-faint); text-transform: uppercase; }
+.quick-nav__title{ font-size: .9rem; color: var(--text-muted); transition: color var(--t-fast) var(--ease); }
+.quick-nav__link:hover .quick-nav__title{ color: var(--accent); }
+
+/* ---------- Share row ---------- */
+.share-row{ display: flex; align-items: center; gap: 1rem; padding-block: 1.6rem; flex-wrap: wrap; }
+.share-row__label{ font-size: .88rem; color: var(--text-muted); }
+.share-row__copy{
+  width: 38px; height: 38px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(248,250,252,0.04); border: 1px solid var(--border-strong); color: var(--text-muted);
+  cursor: pointer; transition: all var(--t-fast) var(--ease);
+}
+.share-row__copy:hover{ color: #fff; background: var(--grad-primary); border-color: transparent; transform: translateY(-3px); }
+.share-row__copy.is-copied{ color: #4ADE80; border-color: rgba(74,222,128,0.4); }
+
+/* ---------- Author bio ---------- */
+.author-bio{
+  display: flex; gap: 1.4rem; padding: 1.8rem; border-radius: var(--radius-lg); margin-block: 2rem;
+}
+.author-bio__photo{ width: 88px; height: 88px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-strong); flex-shrink: 0; }
+.author-bio__body h3{ font-size: 1.1rem; margin-bottom: .5rem; }
+.author-bio__body p{ color: var(--text-muted); font-size: .92rem; margin-bottom: 1rem; }
+.author-bio__skills{ display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.author-bio__links{ display: flex; flex-wrap: wrap; gap: .7rem; }
+
+/* ---------- FAQ accordion ---------- */
+.faq-list{ display: flex; flex-direction: column; gap: .8rem; }
+.faq-item{ border-radius: var(--radius-md); overflow: hidden; }
+.faq-item__q{
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  background: none; border: none; text-align: left; cursor: pointer;
+  padding: 1.1rem 1.3rem; font-size: .96rem; font-weight: 600; color: var(--text);
+}
+.faq-item__icon{ font-family: var(--font-mono); color: var(--accent); font-size: 1.2rem; transition: transform var(--t-fast) var(--ease); }
+.faq-item__q[aria-expanded="true"] .faq-item__icon{ transform: rotate(45deg); }
+.faq-item__a{ max-height: 0; overflow: hidden; transition: max-height var(--t-med) var(--ease); }
+.faq-item__a p{ padding: 0 1.3rem 1.2rem; color: var(--text-muted); font-size: .9rem; }
+
+/* ---------- Comments placeholder ---------- */
+.comments-placeholder{ padding-block: 56px; }
+.comments-placeholder__box{ border-radius: var(--radius-md); padding: 2rem; text-align: center; color: var(--text-muted); }
+
+/* ---------- Article page responsive ---------- */
+@media (max-width: 1024px){
+  .article-layout{ grid-template-columns: 1fr; }
+  .toc{ position: static; max-height: none; }
+  .author-bio{ flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 760px){
+  .quick-nav{ flex-direction: column; align-items: flex-start; }
+  .quick-nav__link--next{ text-align: left; margin-left: 0; }
+}
+/* ========================== END ARTICLE PAGE ADD-ONS ========================== */

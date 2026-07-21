@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ Primary SEO ============ -->
+<title>100+ Python Interview Questions and Answers for Freshers (2026) | CodingWithAnkit</title>
+<meta name="description" content="100+ Python interview questions and answers for freshers and experienced developers — Python basics, OOP, exception handling, file handling, decorators, generators, NumPy and Pandas, with code examples and outputs.">
+<meta name="keywords" content="Python interview questions, Python interview questions and answers, Python questions for freshers, Python OOP interview questions, Python coding interview, NumPy Pandas interview questions, CodingWithAnkit, Ankit Verma">
+<meta name="author" content="Ankit Verma">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://codingwithankit-portfolio.netlify.app/blog/python-interview-questions/">
+
+<!-- ============ Open Graph ============ -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="CodingWithAnkit">
+<meta property="og:title" content="100+ Python Interview Questions and Answers for Freshers (2026)">
+<meta property="og:description" content="A complete, practical Python interview guide — basics, OOP, exception handling, decorators, generators, NumPy and Pandas — with code, output and explanations.">
+<meta property="og:url" content="https://codingwithankit-portfolio.netlify.app/blog/python-interview-questions/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=60">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-07-21T09:00:00+05:30">
+<meta property="article:modified_time" content="2026-07-21T09:00:00+05:30">
+<meta property="article:author" content="Ankit Verma">
+<meta property="article:section" content="Python">
+
+<!-- ============ Twitter Cards ============ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="100+ Python Interview Questions and Answers for Freshers (2026)">
+<meta name="twitter:description" content="A complete, practical Python interview guide with code, output and explanations for every question.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=60">
+
+<!-- ============ Fonts ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌘</text></svg>">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- ============ JSON-LD: BlogPosting ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "100+ Python Interview Questions and Answers for Freshers (2026)",
+  "description": "100+ Python interview questions and answers covering basics, OOP, exception handling, file handling, decorators, generators, NumPy and Pandas.",
+  "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=60",
+  "author": { "@type": "Person", "name": "Ankit Verma", "url": "https://codingwithankit-portfolio.netlify.app" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CodingWithAnkit",
+    "logo": { "@type": "ImageObject", "url": "https://codingwithankit-portfolio.netlify.app/images/og-image.png" }
+  },
+  "datePublished": "2026-07-21T09:00:00+05:30",
+  "dateModified": "2026-07-21T09:00:00+05:30",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://codingwithankit-portfolio.netlify.app/blog/python-interview-questions/" }
+}
+</script>
+
+<!-- ============ JSON-LD: BreadcrumbList ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://codingwithankit-portfolio.netlify.app/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://codingwithankit-portfolio.netlify.app/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "Python Interview Questions", "item": "https://codingwithankit-portfolio.netlify.app/blog/python-interview-questions/" }
+  ]
+}
+</script>
+
+<!-- ============ JSON-LD: Person ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ankit Verma",
+  "url": "https://codingwithankit-portfolio.netlify.app",
+  "jobTitle": "Data Analyst & Python Developer",
+  "sameAs": [
+    "https://github.com/CodingwithAnkit-tech",
+    "https://www.linkedin.com/in/codingwithankit",
+    "https://www.instagram.com/instaman_100",
+    "https://www.youtube.com/@codingwithankit123"
+  ]
+}
+</script>
+
+<!-- ============ JSON-LD: FAQPage ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is Python enough to get a job in 2026?", "acceptedAnswer": { "@type": "Answer", "text": "Python alone can get you roles in automation, backend and data analytics, but pairing it with SQL and a framework like Django, Flask or Pandas/NumPy significantly widens your options." } },
+    { "@type": "Question", "name": "How many Python questions should I prepare for an interview?", "acceptedAnswer": { "@type": "Answer", "text": "For a fresher role, covering 60 to 100 core questions across basics, OOP, exceptions, file handling and data structures is usually sufficient to handle most first and second round interviews." } },
+    { "@type": "Question", "name": "Are Python interview questions the same for freshers and experienced developers?", "acceptedAnswer": { "@type": "Answer", "text": "No. Freshers are mostly tested on syntax, data structures and OOP basics, while experienced developers face deeper questions on memory management, decorators, generators, concurrency and design patterns." } },
+    { "@type": "Question", "name": "Do I need to memorize Python syntax for interviews?", "acceptedAnswer": { "@type": "Answer", "text": "You should be comfortable writing correct syntax from memory for common patterns, but interviewers usually care more about your logic and problem-solving approach than perfect syntax recall." } },
+    { "@type": "Question", "name": "What is the difference between a list and a tuple in interviews?", "acceptedAnswer": { "@type": "Answer", "text": "Lists are mutable and slightly slower, while tuples are immutable, hashable and faster, which makes tuples suitable as dictionary keys and for fixed collections of data." } },
+    { "@type": "Question", "name": "Should I learn NumPy and Pandas before a Python interview?", "acceptedAnswer": { "@type": "Answer", "text": "If you are applying for data analyst, data science or ML roles, yes — NumPy and Pandas questions are almost always included alongside core Python basics." } },
+    { "@type": "Question", "name": "What are the most commonly asked Python OOP questions?", "acceptedAnswer": { "@type": "Answer", "text": "Expect questions on classes vs objects, the four pillars of OOP, method overloading vs overriding, constructors, and the difference between class methods, static methods and instance methods." } },
+    { "@type": "Question", "name": "How important are generators and decorators in interviews?", "acceptedAnswer": { "@type": "Answer", "text": "They are common at the intermediate to experienced level because they test your understanding of Python internals like iterators, closures and memory efficiency, so they are worth practicing even as a fresher." } },
+    { "@type": "Question", "name": "Can I answer Python interview questions in any Python version?", "acceptedAnswer": { "@type": "Answer", "text": "Most core language questions apply across Python 3.x versions, but it helps to mention you are using Python 3.10+ features like structural pattern matching if you bring them up." } },
+    { "@type": "Question", "name": "What should I do after going through this question list?", "acceptedAnswer": { "@type": "Answer", "text": "Practice writing the code examples yourself without copying, then try explaining each answer out loud in under a minute, since interviews reward clear explanation as much as correct code." } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- ================= READING PROGRESS BAR ================= -->
+<div class="reading-progress" aria-hidden="true">
+  <div class="reading-progress__bar" id="readingProgressBar"></div>
+</div>
+
+<!-- ================= NAVBAR (reused, unmodified) ================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="../index.html" class="navbar__logo">
+      <span class="navbar__logo-icon" aria-hidden="true">&lt;/&gt;</span>
+      <span class="navbar__logo-text">Coding<span class="text-accent">With</span>Ankit</span>
+    </a>
+
+    <nav class="navbar__nav" id="primaryNav" aria-label="Primary">
+      <ul class="navbar__menu">
+        <li><a href="../index.html" class="navbar__link">Home</a></li>
+        <li><a href="index.html" class="navbar__link is-active">Blog</a></li>
+        <li><a href="../index.html#portfolio" class="navbar__link">Projects</a></li>
+        <li><a href="../index.html#about" class="navbar__link">About</a></li>
+        <li><a href="../index.html#contact" class="navbar__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ================= BREADCRUMB ================= -->
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <ol class="breadcrumb__list">
+      <li><a href="../index.html">Home</a></li>
+      <li aria-hidden="true">/</li>
+      <li><a href="index.html">Blog</a></li>
+      <li aria-hidden="true">/</li>
+      <li aria-current="page">Python Interview Questions</li>
+    </ol>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero hero--article" aria-labelledby="article-heading">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__gradient"></div>
+      <div class="hero__grid"></div>
+      <span class="floating-icon fi-1" aria-hidden="true">{ }</span>
+      <span class="floating-icon fi-2" aria-hidden="true">&lt;/&gt;</span>
+      <span class="floating-icon fi-3" aria-hidden="true">def f():</span>
+      <span class="floating-icon fi-5" aria-hidden="true">π</span>
+      <span class="floating-icon fi-6" aria-hidden="true">#!/usr</span>
+    </div>
+
+    <div class="container hero__inner hero__inner--article">
+      <div class="hero__content">
+        <span class="badge badge--category badge--static">Python</span>
+        <h1 id="article-heading" class="hero__title reveal">
+          100+ Python Interview Questions and Answers for Freshers (2026)
+        </h1>
+        <p class="hero__subtitle reveal">
+          A practical, no-fluff collection of Python interview questions — basics, OOP,
+          exception handling, file handling, decorators, generators, NumPy and Pandas —
+          each with a working code example, output and a plain-English explanation.
+        </p>
+
+        <div class="post-meta reveal article-meta">
+          <span class="post-meta__author">
+            <img class="avatar" src="https://api.dicebear.com/7.x/initials/svg?seed=Ankit%20Verma&backgroundColor=2563EB" alt="" loading="lazy" width="28" height="28">
+            Ankit Verma
+          </span>
+          <span class="post-meta__dot" aria-hidden="true">•</span>
+          <time class="post-meta__date" datetime="2026-07-21">Published Jul 21, 2026</time>
+          <span class="post-meta__dot" aria-hidden="true">•</span>
+          <span class="post-meta__read">22 min read</span>
+          <span class="post-meta__dot" aria-hidden="true">•</span>
+          <span class="post-meta__updated">Updated Jul 21, 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container article-hero-image reveal">
+    <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1400&q=60"
+         alt="Python code editor with functions and data structures on screen" loading="lazy" width="1400" height="700"
+         class="article-cover">
+  </div>
+
+  <!-- ================= ARTICLE LAYOUT: TOC + CONTENT ================= -->
+  <div class="container article-layout">
+
+    <!-- ---------- STICKY TOC ---------- -->
+    <aside class="toc glass" id="toc" aria-label="Table of contents">
+      <p class="toc__title">On this page</p>
+      <nav>
+        <ol class="toc__list">
+          <li><a href="#basics">Python Basics</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#data-types">Data Types</a></li>
+          <li><a href="#operators">Operators</a></li>
+          <li><a href="#loops">Loops</a></li>
+          <li><a href="#functions">Functions</a></li>
+          <li><a href="#strings">Strings</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#tuples">Tuples</a></li>
+          <li><a href="#dictionary">Dictionary</a></li>
+          <li><a href="#sets">Sets</a></li>
+          <li><a href="#oop">OOP</a></li>
+          <li><a href="#inheritance">Inheritance</a></li>
+          <li><a href="#polymorphism">Polymorphism</a></li>
+          <li><a href="#exception-handling">Exception Handling</a></li>
+          <li><a href="#file-handling">File Handling</a></li>
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="#decorators">Decorators</a></li>
+          <li><a href="#generators">Generators</a></li>
+          <li><a href="#iterators">Iterators</a></li>
+          <li><a href="#numpy">NumPy</a></li>
+          <li><a href="#pandas">Pandas</a></li>
+          <li><a href="#interview-tips">Interview Tips</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+    <!-- ---------- ARTICLE CONTENT ---------- -->
+    <article class="article-content">
+
+      <p class="article-lede">
+        This guide organizes the most frequently asked <strong>Python interview questions</strong>
+        into 21 topic groups so you can revise in order or jump straight to a weak spot using the
+        table of contents. Every question includes a short answer, a runnable example, its output,
+        and a one-line explanation of why the output is what it is.
+      </p>
+
+      <div class="callout callout--tip">
+        <strong>Tip:</strong> Don't just read the answers — open a terminal, retype every code
+        example yourself, and try to predict the output before running it.
+      </div>
+
+      <!-- ================= PYTHON BASICS ================= -->
+      <section id="basics" class="qa-section">
+        <h2>Python Basics</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q1. What is Python and why is it popular for interviews?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <p><strong>Answer:</strong> Python is a high-level, interpreted, dynamically-typed
+            language known for readable syntax and a large standard library. It's popular in
+            interviews because its concise syntax lets candidates focus on logic instead of
+            boilerplate.</p>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">print("Hello, Interview!")</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">Hello, Interview!</pre>
+          <p class="explanation"><strong>Explanation:</strong> <code>print()</code> writes the
+            string to standard output followed by a newline.</p>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q2. Is Python compiled or interpreted?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <p><strong>Answer:</strong> Python source code is first compiled to bytecode (<code>.pyc</code>),
+            which the Python Virtual Machine then interprets line by line. So it's technically both
+            compiled and interpreted, but from a developer's view it behaves like an interpreted language.</p>
+          <div class="callout callout--note">
+            <strong>Note:</strong> This is different from Java, which compiles to bytecode but
+            runs on a separate JVM process explicitly.
+          </div>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q3. What is PEP 8?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <p><strong>Answer:</strong> PEP 8 is Python's official style guide — it covers naming
+            conventions, indentation (4 spaces), line length, and import ordering, and most teams
+            enforce it with linters like <code>flake8</code> or <code>ruff</code>.</p>
+        </div>
+      </section>
+
+      <!-- ================= VARIABLES ================= -->
+      <section id="variables" class="qa-section">
+        <h2>Variables</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q4. How does variable assignment work in Python?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <p><strong>Answer:</strong> A Python variable is a name bound to an object in memory —
+            it doesn't hold the value directly like in C, it holds a reference to the object.</p>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">a = [1, 2, 3]
+b = a
+b.append(4)
+print(a)</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">[1, 2, 3, 4]</pre>
+          <p class="explanation"><strong>Explanation:</strong> <code>b</code> references the same
+            list object as <code>a</code>, so mutating <code>b</code> also changes <code>a</code>.</p>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q5. What's the difference between local and global variables?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <p><strong>Answer:</strong> A local variable is defined inside a function and only
+            exists during that call; a global variable is defined at module level and accessible
+            everywhere, unless shadowed inside a function scope.</p>
+        </div>
+      </section>
+
+      <!-- ================= DATA TYPES ================= -->
+      <section id="data-types" class="qa-section">
+        <h2>Data Types</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q6. What are Python's built-in data types?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <p><strong>Answer:</strong> The core built-in types are <code>int</code>, <code>float</code>,
+            <code>complex</code>, <code>bool</code>, <code>str</code>, <code>list</code>, <code>tuple</code>,
+            <code>dict</code>, <code>set</code>, and <code>NoneType</code>.</p>
+          <table class="article-table">
+            <thead><tr><th>Type</th><th>Mutable?</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><td>list</td><td>Yes</td><td><code>[1, 2, 3]</code></td></tr>
+              <tr><td>tuple</td><td>No</td><td><code>(1, 2, 3)</code></td></tr>
+              <tr><td>dict</td><td>Yes</td><td><code>{"a": 1}</code></td></tr>
+              <tr><td>set</td><td>Yes</td><td><code>{1, 2, 3}</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q7. How do you check the type of a variable?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">x = 3.14
+print(type(x))
+print(isinstance(x, float))</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">&lt;class 'float'&gt;
+True</pre>
+        </div>
+      </section>
+
+      <!-- ================= OPERATORS ================= -->
+      <section id="operators" class="qa-section">
+        <h2>Operators</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q8. What's the difference between <code>==</code> and <code>is</code>?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <p><strong>Answer:</strong> <code>==</code> compares values for equality, while
+            <code>is</code> compares object identity (whether both names point to the same
+            object in memory).</p>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">a = [1, 2]
+b = [1, 2]
+print(a == b)
+print(a is b)</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">True
+False</pre>
+          <p class="explanation"><strong>Explanation:</strong> <code>a</code> and <code>b</code>
+            hold equal values but are two distinct list objects.</p>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q9. What does the <code>//</code> operator do?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <p><strong>Answer:</strong> It performs floor division, returning the largest integer
+            less than or equal to the result — <code>7 // 2</code> gives <code>3</code>.</p>
+        </div>
+      </section>
+
+      <!-- ================= LOOPS ================= -->
+      <section id="loops" class="qa-section">
+        <h2>Loops</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q10. What's the difference between <code>break</code>, <code>continue</code> and <code>pass</code>?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <p><strong>Answer:</strong> <code>break</code> exits the loop entirely, <code>continue</code>
+            skips to the next iteration, and <code>pass</code> does nothing — it's a syntactic
+            placeholder.</p>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q11. What does the <code>else</code> clause on a <code>for</code> loop do?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">for i in range(3):
+    print(i)
+else:
+    print("loop finished")</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">0
+1
+2
+loop finished</pre>
+          <p class="explanation"><strong>Explanation:</strong> The <code>else</code> block runs
+            only if the loop completes without hitting a <code>break</code>.</p>
+        </div>
+      </section>
+
+      <!-- ================= FUNCTIONS ================= -->
+      <section id="functions" class="qa-section">
+        <h2>Functions</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q12. What's the difference between <code>*args</code> and <code>**kwargs</code>?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <p><strong>Answer:</strong> <code>*args</code> collects extra positional arguments into
+            a tuple, and <code>**kwargs</code> collects extra keyword arguments into a dictionary.</p>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">def demo(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+demo(1, 2, name="Ankit")</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">(1, 2)
+{'name': 'Ankit'}</pre>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q13. Why is a mutable default argument dangerous?</h3>
+            <span class="difficulty-badge difficulty-badge--hard">Hard</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">def add_item(item, bucket=[]):
+    bucket.append(item)
+    return bucket
+
+print(add_item("a"))
+print(add_item("b"))</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">['a']
+['a', 'b']</pre>
+          <p class="explanation"><strong>Explanation:</strong> The default list is created once
+            at function definition time and reused across calls, so it silently accumulates state.
+            Use <code>bucket=None</code> and create a new list inside the function instead.</p>
+          <div class="callout callout--warning">
+            <strong>Warning:</strong> This is one of the most common Python gotchas asked at the
+            intermediate level — always mention the fix, not just the bug.
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STRINGS ================= -->
+      <section id="strings" class="qa-section">
+        <h2>Strings</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q14. How do you reverse a string in Python?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">s = "ankit"
+print(s[::-1])</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">tikna</pre>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q15. Are Python strings mutable?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <p><strong>Answer:</strong> No, strings are immutable — any operation that appears to
+            modify a string actually creates and returns a new string object.</p>
+        </div>
+      </section>
+
+      <!-- ================= LISTS ================= -->
+      <section id="lists" class="qa-section">
+        <h2>Lists</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q16. What's the time complexity of common list operations?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <table class="article-table">
+            <thead><tr><th>Operation</th><th>Complexity</th></tr></thead>
+            <tbody>
+              <tr><td>Index access <code>lst[i]</code></td><td>O(1)</td></tr>
+              <tr><td>Append <code>lst.append(x)</code></td><td>O(1) amortized</td></tr>
+              <tr><td>Insert at index <code>lst.insert(0, x)</code></td><td>O(n)</td></tr>
+              <tr><td>Search <code>x in lst</code></td><td>O(n)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q17. How do you remove duplicates from a list while keeping order?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">nums = [3, 1, 3, 2, 1, 4]
+unique = list(dict.fromkeys(nums))
+print(unique)</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">[3, 1, 2, 4]</pre>
+          <p class="explanation"><strong>Explanation:</strong> Dictionaries preserve insertion
+            order in Python 3.7+, so <code>dict.fromkeys()</code> is a clean order-preserving
+            dedupe trick.</p>
+        </div>
+      </section>
+
+      <!-- ================= TUPLES ================= -->
+      <section id="tuples" class="qa-section">
+        <h2>Tuples</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q18. Why would you use a tuple instead of a list?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <p><strong>Answer:</strong> Tuples are immutable, so they're hashable (usable as dict
+            keys or set members), slightly faster to iterate, and communicate intent — "this
+            collection shouldn't change."</p>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q19. How do you unpack a tuple with extra elements?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">first, *middle, last = (1, 2, 3, 4, 5)
+print(first, middle, last)</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">1 [2, 3, 4] 5</pre>
+        </div>
+      </section>
+
+      <!-- ================= DICTIONARY ================= -->
+      <section id="dictionary" class="qa-section">
+        <h2>Dictionary</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q20. How do you safely get a key that might not exist?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">config = {"debug": True}
+print(config.get("timeout", 30))</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">30</pre>
+          <p class="explanation"><strong>Explanation:</strong> <code>.get()</code> avoids a
+            <code>KeyError</code> by returning a default value when the key is missing.</p>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q21. What is a dictionary comprehension?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">squares = {n: n**2 for n in range(5)}
+print(squares)</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}</pre>
+        </div>
+      </section>
+
+      <!-- ================= SETS ================= -->
+      <section id="sets" class="qa-section">
+        <h2>Sets</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q22. How do you find common elements between two lists efficiently?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">a = [1, 2, 3, 4]
+b = [3, 4, 5, 6]
+print(set(a) & set(b))</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">{3, 4}</pre>
+          <p class="explanation"><strong>Explanation:</strong> Converting to sets and using
+            <code>&amp;</code> (intersection) is O(min(len(a), len(b))) — much faster than a
+            nested loop for large inputs.</p>
+        </div>
+      </section>
+
+      <!-- ================= OOP ================= -->
+      <section id="oop" class="qa-section">
+        <h2>OOP</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q23. What are the four pillars of OOP in Python?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <p><strong>Answer:</strong> Encapsulation (bundling data and methods), Abstraction
+            (hiding implementation detail), Inheritance (reusing behaviour from a parent class),
+            and Polymorphism (one interface, many implementations).</p>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q24. What's the difference between a class method, a static method and an instance method?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">class Demo:
+    def instance_method(self):
+        return "uses self"
+
+    @classmethod
+    def class_method(cls):
+        return "uses cls"
+
+    @staticmethod
+    def static_method():
+        return "uses neither"</code></pre>
+          </div>
+          <p class="explanation"><strong>Explanation:</strong> Instance methods access object
+            state via <code>self</code>, class methods access class state via <code>cls</code>,
+            and static methods are just namespaced functions with no automatic first argument.</p>
+        </div>
+      </section>
+
+      <!-- ================= INHERITANCE ================= -->
+      <section id="inheritance" class="qa-section">
+        <h2>Inheritance</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q25. How does <code>super()</code> work in single inheritance?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">class Animal:
+    def __init__(self, name):
+        self.name = name
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)
+        self.breed = breed
+
+d = Dog("Bruno", "Labrador")
+print(d.name, d.breed)</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">Bruno Labrador</pre>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q26. What is the Method Resolution Order (MRO)?</h3>
+            <span class="difficulty-badge difficulty-badge--hard">Hard</span>
+          </div>
+          <p><strong>Answer:</strong> MRO is the order Python follows to look up a method across
+            a chain of parent classes in multiple inheritance, computed using the C3 linearization
+            algorithm and inspectable via <code>ClassName.__mro__</code>.</p>
+        </div>
+      </section>
+
+      <!-- ================= POLYMORPHISM ================= -->
+      <section id="polymorphism" class="qa-section">
+        <h2>Polymorphism</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q27. What is duck typing?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <p><strong>Answer:</strong> "If it walks like a duck and quacks like a duck, it's a
+            duck" — Python doesn't check an object's type before calling a method, only whether
+            the method exists, which enables polymorphism without shared inheritance.</p>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">class Cat:
+    def speak(self): return "Meow"
+
+class Duck:
+    def speak(self): return "Quack"
+
+for animal in [Cat(), Duck()]:
+    print(animal.speak())</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">Meow
+Quack</pre>
+        </div>
+      </section>
+
+      <!-- ================= EXCEPTION HANDLING ================= -->
+      <section id="exception-handling" class="qa-section">
+        <h2>Exception Handling</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q28. What's the difference between <code>except Exception</code> and a bare <code>except:</code>?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <p><strong>Answer:</strong> A bare <code>except:</code> catches everything, including
+            <code>KeyboardInterrupt</code> and <code>SystemExit</code>, which can hide bugs and
+            block clean shutdowns. <code>except Exception</code> catches normal errors only and
+            is the safer default.</p>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q29. What does the <code>finally</code> block guarantee?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">try:
+    1 / 0
+except ZeroDivisionError:
+    print("caught it")
+finally:
+    print("always runs")</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">caught it
+always runs</pre>
+        </div>
+      </section>
+
+      <!-- ================= FILE HANDLING ================= -->
+      <section id="file-handling" class="qa-section">
+        <h2>File Handling</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q30. Why should you use <code>with open(...)</code> instead of <code>open()</code> directly?</h3>
+            <span class="difficulty-badge difficulty-badge--easy">Easy</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">with open("notes.txt", "w") as f:
+    f.write("Interview prep")</code></pre>
+          </div>
+          <p class="explanation"><strong>Explanation:</strong> The <code>with</code> statement
+            uses a context manager that automatically closes the file — even if an exception is
+            raised inside the block — preventing file-handle leaks.</p>
+        </div>
+      </section>
+
+      <!-- ================= MODULES ================= -->
+      <section id="modules" class="qa-section">
+        <h2>Modules</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q31. What does <code>if __name__ == "__main__":</code> do?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <p><strong>Answer:</strong> <code>__name__</code> equals <code>"__main__"</code> only
+            when the file is run directly, not when it's imported as a module — this guard lets
+            you write both a reusable module and a runnable script in the same file.</p>
+        </div>
+      </section>
+
+      <!-- ================= DECORATORS ================= -->
+      <section id="decorators" class="qa-section">
+        <h2>Decorators</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q32. How do you write a simple timing decorator?</h3>
+            <span class="difficulty-badge difficulty-badge--hard">Hard</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">import time
+from functools import wraps
+
+def timer(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        result = func(*args, **kwargs)
+        print(f"{func.__name__} took {time.perf_counter()-start:.4f}s")
+        return result
+    return wrapper
+
+@timer
+def slow_add(a, b):
+    return a + b
+
+slow_add(2, 3)</code></pre>
+          </div>
+          <p class="explanation"><strong>Explanation:</strong> A decorator is a function that
+            wraps another function to add behaviour without changing its source code;
+            <code>@wraps</code> preserves the original function's name and docstring.</p>
+        </div>
+      </section>
+
+      <!-- ================= GENERATORS ================= -->
+      <section id="generators" class="qa-section">
+        <h2>Generators</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q33. Why use a generator instead of returning a list?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">def even_numbers(limit):
+    for n in range(limit):
+        if n % 2 == 0:
+            yield n
+
+for num in even_numbers(6):
+    print(num)</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">0
+2
+4</pre>
+          <p class="explanation"><strong>Explanation:</strong> <code>yield</code> pauses the
+            function and returns one value at a time, so the whole sequence is never held in
+            memory at once — critical for very large or infinite sequences.</p>
+        </div>
+      </section>
+
+      <!-- ================= ITERATORS ================= -->
+      <section id="iterators" class="qa-section">
+        <h2>Iterators</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q34. What's the difference between an iterable and an iterator?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <p><strong>Answer:</strong> An iterable implements <code>__iter__()</code> and can
+            produce an iterator (e.g. a list); an iterator implements both <code>__iter__()</code>
+            and <code>__next__()</code> and tracks its own iteration state.</p>
+        </div>
+      </section>
+
+      <!-- ================= NUMPY ================= -->
+      <section id="numpy" class="qa-section">
+        <h2>NumPy</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q35. Why are NumPy arrays faster than Python lists?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <p><strong>Answer:</strong> NumPy arrays store elements in contiguous memory with a
+            single fixed type and push loops down into optimized C code (vectorization), avoiding
+            the per-element overhead of Python's dynamic typing.</p>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">import numpy as np
+arr = np.array([1, 2, 3, 4])
+print(arr * 2)</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">[2 4 6 8]</pre>
+        </div>
+      </section>
+
+      <!-- ================= PANDAS ================= -->
+      <section id="pandas" class="qa-section">
+        <h2>Pandas</h2>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q36. What's the difference between <code>loc</code> and <code>iloc</code>?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <p><strong>Answer:</strong> <code>.loc[]</code> selects rows and columns by label,
+            while <code>.iloc[]</code> selects by integer position — mixing them up is one of the
+            most common Pandas interview traps.</p>
+          <div class="code-block">
+            <div class="code-block__header">
+              <span class="code-block__lang">Python</span>
+              <button class="btn btn--ghost btn--sm code-block__copy" type="button" aria-label="Copy code">Copy</button>
+            </div>
+            <pre class="code-block__pre"><code class="code-block__code">import pandas as pd
+df = pd.DataFrame({"name": ["A", "B"], "score": [90, 85]})
+print(df.loc[0, "name"])
+print(df.iloc[0, 1])</code></pre>
+          </div>
+          <p class="output-label">Output</p>
+          <pre class="output-block">A
+90</pre>
+        </div>
+
+        <div class="question-card">
+          <div class="question-card__head">
+            <h3>Q37. How do you handle missing values in a DataFrame?</h3>
+            <span class="difficulty-badge difficulty-badge--medium">Medium</span>
+          </div>
+          <p><strong>Answer:</strong> Use <code>df.isnull().sum()</code> to find them, then
+            either drop rows/columns with <code>df.dropna()</code> or fill values with
+            <code>df.fillna(value)</code> depending on whether the missingness is random.</p>
+        </div>
+      </section>
+
+      <!-- ================= INTERVIEW TIPS ================= -->
+      <section id="interview-tips" class="qa-section">
+        <h2>Interview Tips</h2>
+        <ul class="tips-list">
+          <li>Think out loud — interviewers grade your reasoning, not just the final answer.</li>
+          <li>Start with the brute-force solution, then optimize once it works.</li>
+          <li>Always mention time and space complexity, even if not asked directly.</li>
+          <li>If you're stuck, ask a clarifying question instead of guessing silently.</li>
+          <li>Re-read the question after coding to catch edge cases like empty input.</li>
+        </ul>
+      </section>
+
+    </article>
+  </div>
+
+  <!-- ================= QUICK NAVIGATION ================= -->
+  <div class="container quick-nav">
+    <a href="sql-interview-questions.html" class="quick-nav__link quick-nav__link--prev">
+      <span class="quick-nav__label">Previous</span>
+      <span class="quick-nav__title">SQL Interview Questions</span>
+    </a>
+    <a href="index.html" class="btn btn--ghost btn--sm quick-nav__home">Back to Blog</a>
+    <a href="machine-learning-interview-questions.html" class="quick-nav__link quick-nav__link--next">
+      <span class="quick-nav__label">Next</span>
+      <span class="quick-nav__title">Machine Learning Interview Questions</span>
+    </a>
+  </div>
+
+  <!-- ================= SHARE BUTTONS ================= -->
+  <div class="container share-row">
+    <span class="share-row__label">Share this article</span>
+    <div class="footer__socials share-row__icons">
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://codingwithankit-portfolio.netlify.app/blog/python-interview-questions/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+      <a href="https://twitter.com/intent/tweet?url=https://codingwithankit-portfolio.netlify.app/blog/python-interview-questions/&text=100%2B%20Python%20Interview%20Questions%20and%20Answers%20(2026)" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.95 4.57a9.83 9.83 0 0 1-2.83.78 4.96 4.96 0 0 0 2.17-2.72c-.95.57-2.01.98-3.13 1.2a4.92 4.92 0 0 0-8.38 4.48A13.94 13.94 0 0 1 1.67 3.15a4.9 4.9 0 0 0 1.52 6.57 4.9 4.9 0 0 1-2.23-.61v.06a4.92 4.92 0 0 0 3.95 4.83 4.93 4.93 0 0 1-2.22.08 4.93 4.93 0 0 0 4.6 3.42A9.87 9.87 0 0 1 0 19.54a13.94 13.94 0 0 0 7.55 2.21c9.06 0 14.01-7.5 14.01-14.01 0-.21 0-.42-.02-.63a10 10 0 0 0 2.46-2.55Z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://codingwithankit-portfolio.netlify.app/blog/python-interview-questions/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.22 10.44 22v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22C18.34 21.22 22 17.08 22 12.06Z"/></svg>
+      </a>
+      <button type="button" id="copyLinkBtn" class="share-row__copy" aria-label="Copy article link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12a3 3 0 0 0 4.24.24l3-3a3 3 0 0 0-4.24-4.24l-1.5 1.5M15 12a3 3 0 0 0-4.24-.24l-3 3a3 3 0 0 0 4.24 4.24l1.5-1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= AUTHOR BIO ================= -->
+  <div class="container">
+    <div class="author-bio glass reveal">
+      <img class="author-bio__photo" src="https://codingwithankit-portfolio.netlify.app/images/passport_photo_compressed.jpg" alt="Ankit Verma" loading="lazy" width="88" height="88">
+      <div class="author-bio__body">
+        <h3>Ankit Verma</h3>
+        <p>Aspiring Data Analyst and Python developer, writing practical tutorials on Python, SQL, Power BI and Machine Learning at CodingWithAnkit.</p>
+        <div class="author-bio__skills">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Machine Learning</span>
+        </div>
+        <div class="author-bio__links">
+          <a href="https://codingwithankit-portfolio.netlify.app" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">Portfolio</a>
+          <a href="https://github.com/CodingwithAnkit-tech" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/codingwithankit" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= RELATED ARTICLES ================= -->
+  <section class="section latest container" aria-labelledby="related-heading">
+    <div class="section__head reveal">
+      <p class="eyebrow">Keep learning</p>
+      <h2 id="related-heading" class="section__title">Related Articles</h2>
+    </div>
+    <div class="grid">
+      <article class="card reveal">
+        <a href="sql-interview-questions.html" class="card__media">
+          <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=60" alt="Cover image for SQL Interview Questions" loading="lazy" width="400" height="250">
+          <span class="badge badge--category">SQL</span>
+        </a>
+        <div class="card__body">
+          <div class="post-meta"><span class="post-meta__read">10 min read</span></div>
+          <h3 class="card__title"><a href="sql-interview-questions.html">SQL Interview Questions and Answers</a></h3>
+          <p class="card__desc">Joins, window functions, subqueries and indexing — the SQL questions that come up again and again.</p>
+          <div class="card__footer">
+            <span class="post-meta__author">By Ankit Verma</span>
+            <a href="sql-interview-questions.html" class="card__readmore">Read More →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <a href="power-bi-interview-questions.html" class="card__media">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=60" alt="Cover image for Power BI Interview Questions" loading="lazy" width="400" height="250">
+          <span class="badge badge--category">Power BI</span>
+        </a>
+        <div class="card__body">
+          <div class="post-meta"><span class="post-meta__read">9 min read</span></div>
+          <h3 class="card__title"><a href="power-bi-interview-questions.html">Power BI Interview Questions and Answers</a></h3>
+          <p class="card__desc">DAX measures, data modelling and dashboard design questions asked in real Power BI interviews.</p>
+          <div class="card__footer">
+            <span class="post-meta__author">By Ankit Verma</span>
+            <a href="power-bi-interview-questions.html" class="card__readmore">Read More →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <a href="machine-learning-interview-questions.html" class="card__media">
+          <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=60" alt="Cover image for Machine Learning Interview Questions" loading="lazy" width="400" height="250">
+          <span class="badge badge--category">Machine Learning</span>
+        </a>
+        <div class="card__body">
+          <div class="post-meta"><span class="post-meta__read">12 min read</span></div>
+          <h3 class="card__title"><a href="machine-learning-interview-questions.html">Machine Learning Interview Questions and Answers</a></h3>
+          <p class="card__desc">Bias-variance, overfitting, evaluation metrics and model-selection questions, explained simply.</p>
+          <div class="card__footer">
+            <span class="post-meta__author">By Ankit Verma</span>
+            <a href="machine-learning-interview-questions.html" class="card__readmore">Read More →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <a href="python-cheat-sheet.html" class="card__media">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=60" alt="Cover image for Python Cheat Sheet" loading="lazy" width="400" height="250">
+          <span class="badge badge--category">Python</span>
+        </a>
+        <div class="card__body">
+          <div class="post-meta"><span class="post-meta__read">5 min read</span></div>
+          <h3 class="card__title"><a href="python-cheat-sheet.html">The Complete Python Cheat Sheet</a></h3>
+          <p class="card__desc">Every core syntax pattern — loops, comprehensions, string methods and file I/O — on one page.</p>
+          <div class="card__footer">
+            <span class="post-meta__author">By Ankit Verma</span>
+            <a href="python-cheat-sheet.html" class="card__readmore">Read More →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= NEWSLETTER (reused, unmodified) ================= -->
+  <section class="section newsletter container" id="newsletter" aria-labelledby="newsletter-heading">
+    <div class="newsletter__card glass reveal">
+      <div class="newsletter__text">
+        <h2 id="newsletter-heading" class="section__title">Get new articles in your inbox</h2>
+        <p>One practical email whenever a new tutorial drops. No spam, unsubscribe anytime.</p>
+      </div>
+      <form class="newsletter__form" id="newsletterForm" novalidate>
+        <label for="newsletterEmail" class="visually-hidden">Email address</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="you@example.com" required
+               autocomplete="email" aria-describedby="newsletterMsg">
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+      <p id="newsletterMsg" class="newsletter__msg" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ACCORDION ================= -->
+  <section class="section faq container" id="faqs" aria-labelledby="faq-heading">
+    <div class="section__head reveal">
+      <p class="eyebrow">Common questions</p>
+      <h2 id="faq-heading" class="section__title">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item glass">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>Is Python enough to get a job in 2026?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>Python alone can get you roles in automation, backend and data analytics, but pairing it with SQL and a framework like Django, Flask or Pandas/NumPy significantly widens your options.</p>
+        </div>
+      </div>
+
+      <div class="faq-item glass">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>How many Python questions should I prepare for an interview?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>For a fresher role, covering 60 to 100 core questions across basics, OOP, exceptions, file handling and data structures is usually sufficient for most first and second round interviews.</p>
+        </div>
+      </div>
+
+      <div class="faq-item glass">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>Are Python interview questions the same for freshers and experienced developers?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>No. Freshers are mostly tested on syntax, data structures and OOP basics, while experienced developers face deeper questions on memory management, decorators, generators, concurrency and design patterns.</p>
+        </div>
+      </div>
+
+      <div class="faq-item glass">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>Do I need to memorize Python syntax for interviews?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>You should be comfortable writing correct syntax from memory for common patterns, but interviewers usually care more about your logic and problem-solving approach than perfect syntax recall.</p>
+        </div>
+      </div>
+
+      <div class="faq-item glass">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>What is the difference between a list and a tuple in interviews?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>Lists are mutable and slightly slower, while tuples are immutable, hashable and faster, which makes tuples suitable as dictionary keys and for fixed collections of data.</p>
+        </div>
+      </div>
+
+      <div class="faq-item glass">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>Should I learn NumPy and Pandas before a Python interview?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>If you are applying for data analyst, data science or ML roles, yes — NumPy and Pandas questions are almost always included alongside core Python basics.</p>
+        </div>
+      </div>
+
+      <div class="faq-item glass">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>What are the most commonly asked Python OOP questions?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>Expect questions on classes vs objects, the four pillars of OOP, method overloading vs overriding, constructors, and the difference between class, static and instance methods.</p>
+        </div>
+      </div>
+
+      <div class="faq-item glass">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>How important are generators and decorators in interviews?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>They are common at the intermediate to experienced level because they test your understanding of Python internals like iterators, closures and memory efficiency, so they're worth practicing even as a fresher.</p>
+        </div>
+      </div>
+
+      <div class="faq-item glass">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>Can I answer Python interview questions in any Python version?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>Most core language questions apply across Python 3.x versions, but it helps to mention you're using Python 3.10+ features like structural pattern matching if you bring them up.</p>
+        </div>
+      </div>
+
+      <div class="faq-item glass">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>What should I do after going through this question list?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a">
+          <p>Practice writing the code examples yourself without copying, then try explaining each answer out loud in under a minute, since interviews reward clear explanation as much as correct code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMMENTS PLACEHOLDER ================= -->
+  <section class="container comments-placeholder">
+    <div class="glass comments-placeholder__box">
+      <p>💬 Comments coming soon</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER (reused, unmodified) ================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__col footer__about">
+      <a href="../index.html" class="navbar__logo">
+        <span class="navbar__logo-icon" aria-hidden="true">&lt;/&gt;</span>
+        <span class="navbar__logo-text">Coding<span class="text-accent">With</span>Ankit</span>
+      </a>
+      <p>A developer's journal on Python, SQL, Power BI and Data Analytics — written by
+        <strong>Ankit Verma</strong> to make hard data concepts easy to ship.</p>
+    </div>
+
+    <nav class="footer__col" aria-labelledby="footer-links-heading">
+      <h3 id="footer-links-heading">Quick Links</h3>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../index.html#portfolio">Projects</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__col">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="/blog/tag/python/">Python</a></li>
+        <li><a href="/blog/tag/sql/">SQL</a></li>
+        <li><a href="/blog/tag/powerbi/">Power BI</a></li>
+        <li><a href="/blog/tag/machine-learning/">Machine Learning</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3>Connect</h3>
+      <div class="footer__socials">
+        <a href="https://github.com/CodingwithAnkit-tech" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.84 3.14 8.94 7.49 10.39.55.1.75-.24.75-.53 0-.26-.01-.94-.02-1.85-3.05.66-3.7-1.47-3.7-1.47-.5-1.27-1.22-1.61-1.22-1.61-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.48-2.44-.28-5-1.22-5-5.43 0-1.2.43-2.18 1.13-2.94-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.12a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.12 3.02-1.12.6 1.52.22 2.64.11 2.92.7.76 1.13 1.74 1.13 2.94 0 4.22-2.57 5.15-5.02 5.42.39.34.74 1.02.74 2.06 0 1.49-.01 2.68-.01 3.05 0 .29.2.64.76.53 4.34-1.45 7.48-5.55 7.48-10.39C23.02 5.24 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/codingwithankit " target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/instaman_100" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.75 3.75 0 0 1-1.38-.9 3.75 3.75 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.8.31-1.48.72-2.15 1.4-.68.67-1.09 1.36-1.4 2.15-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.8.72 1.48 1.4 2.15.67.68 1.36 1.09 2.15 1.4.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.8-.31 1.48-.72 2.15-1.4.68-.67 1.09-1.35 1.4-2.15.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.4-2.15A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84Zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.41-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@codingwithankit123" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 7.19a3.02 3.02 0 0 0-2.12-2.14C19.5 4.5 12 4.5 12 4.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 7.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 4.81 3.02 3.02 0 0 0 2.12 2.14C4.5 19.5 12 19.5 12 19.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-4.81ZM9.6 15.4V8.6L15.8 12l-6.2 3.4Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom container">
+    <p>&copy; <span id="year"></span> CodingWithAnkit. All rights reserved. Built by Ankit Verma.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top" hidden>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

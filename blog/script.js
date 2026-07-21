@@ -13,6 +13,20 @@
   ------------------------------------------------------------------ */
   const posts = [
     {
+      id: 'python-interview-questions',
+      title: '100+ Python Interview Questions and Answers (2026)',
+      desc: 'Master Python interview preparation with 100+ carefully selected beginner to advanced questions, real coding examples, expected outputs, and clear explanations to help you crack technical interviews with confidence.',
+      category: 'python',
+      categoryLabel: 'Python',
+      author: 'Ankit Verma',
+      date: '2026-07-21',
+      dateLabel: 'Jul 21, 2026',
+      readTime: '35 min read',
+      img: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=60', 
+      url: 'python-interview-questions.html' 
+    },
+    
+    /* -------- {
       id: 'python-pandas-cheatsheet',
       title: 'The Only Pandas Cheat Sheet You Need for Data Cleaning',
       desc: 'Filter, group, merge and reshape data frames fast — every method explained with a one-line example you can copy straight into a notebook.',
@@ -128,7 +142,7 @@
       readTime: '8 min read',
       img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=60',
       url: '/blog/power-bi-vs-tableau-2026/'
-    }
+    }----- */
   ];
 
   const grid = document.getElementById('postsGrid');
@@ -380,3 +394,98 @@ print(top.head(3))
   toggleBackToTop();
 
 })();
+
+/* ==========================================================================
+   ARTICLE PAGE ADD-ONS
+   Appended for individual blog article pages (e.g. python-interview-questions.html).
+   Runs in its own IIFE so it never touches the variables/scope above.
+   Every selector is guarded, so on pages without these elements (like the
+   blog homepage) this block simply does nothing — existing behaviour above
+   this line is untouched.
+   ========================================================================== */
+(() => {
+  'use strict';
+
+  /* ---------- Reading progress bar ---------- */
+  const progressBar = document.getElementById('readingProgressBar');
+  function updateProgress(){
+    if(!progressBar) return;
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = pct + '%';
+  }
+  if(progressBar){
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  }
+
+  /* ---------- TOC scrollspy ---------- */
+  const tocLinks = document.querySelectorAll('.toc__list a');
+  const qaSections = Array.from(document.querySelectorAll('.qa-section[id]'));
+  if(tocLinks.length && qaSections.length){
+    const spyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const link = document.querySelector(`.toc__list a[href="#${entry.target.id}"]`);
+        if(!link) return;
+        if(entry.isIntersecting){
+          tocLinks.forEach(l => l.classList.remove('is-active'));
+          link.classList.add('is-active');
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+    qaSections.forEach(sec => spyObserver.observe(sec));
+  }
+
+  /* ---------- Copy code buttons ---------- */
+  document.querySelectorAll('.code-block__copy').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const codeEl = btn.closest('.code-block').querySelector('.code-block__code');
+      if(!codeEl) return;
+      try{
+        await navigator.clipboard.writeText(codeEl.textContent);
+        const original = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.classList.add('is-copied');
+        setTimeout(() => { btn.textContent = original; btn.classList.remove('is-copied'); }, 1800);
+      }catch(err){
+        console.error('Copy failed', err);
+      }
+    });
+  });
+
+  /* ---------- Copy article link ---------- */
+  const copyLinkBtn = document.getElementById('copyLinkBtn');
+  if(copyLinkBtn){
+    copyLinkBtn.addEventListener('click', async () => {
+      try{
+        await navigator.clipboard.writeText(window.location.href);
+        copyLinkBtn.classList.add('is-copied');
+        setTimeout(() => copyLinkBtn.classList.remove('is-copied'), 1800);
+      }catch(err){
+        console.error('Copy failed', err);
+      }
+    });
+  }
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll('.faq-item__q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-item__a');
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+      document.querySelectorAll('.faq-item__q').forEach(other => {
+        if(other !== btn){
+          other.setAttribute('aria-expanded', 'false');
+          other.closest('.faq-item').querySelector('.faq-item__a').style.maxHeight = null;
+        }
+      });
+
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      answer.style.maxHeight = isOpen ? null : answer.scrollHeight + 'px';
+    });
+  });
+
+})();
+/* ========================== END ARTICLE PAGE ADD-ONS ========================== */
